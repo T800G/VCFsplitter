@@ -1,12 +1,4 @@
-﻿/*
- * Created by SharpDevelop.
- * User: T800
- * Date: 23.2.2019.
- * Time: 11:15
- * 
- * To change this template use Tools | Options | Coding | Edit Standard Headers.
- */
-using System;
+﻿using System;
 using System.Windows.Forms;
 
 namespace VCFsplitter
@@ -22,10 +14,14 @@ namespace VCFsplitter
 		[STAThread]
 		private static void Main(string[] args)
 		{
+			if (Environment.OSVersion.Version.Major >= 6) SetProcessDPIAware();
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
 			Application.Run(new MainForm());
 		}
 		
+		[System.Runtime.InteropServices.DllImport("user32.dll")]
+		private static extern bool SetProcessDPIAware();
+    
 	}
 }
