@@ -13,13 +13,13 @@ namespace VCFsplitter
 	
 		public void Split(String vcfFile, String outFolder)
 		{
-			try
+			//try
 			{
 				string[] srcLines = File.ReadAllLines(vcfFile);
 				//Debug.WriteLine("srcLines="+srcLines.Length);
 	
 				StringBuilder strb = new StringBuilder();
-				string fname="";				
+				string fname="";
 				
 				//foreach (string srcLine in srcLines)
 				for (int r=0; r<srcLines.Length; r++)
@@ -37,7 +37,7 @@ namespace VCFsplitter
 						//  FN;CHARSET=UTF-8;ENCODING=QUOTED-PRINTABLE:=4A=6F=62=5F=4D=69=72=6A=61=6E=61=20=4B=72=61=6C=6A=20=4B=6F=70=69=C4=
 						//  =87
 						int m=1;
-						while (srcLines[r+m].Substring(0,1).Equals("=") && (m < 7))  //check next 6 lines, should be sufficient (at least it should break on END:VCARD
+						while (srcLines[r+m].Length>0 && srcLines[r+m].Substring(0,1).Equals("=") && (m < 7))  //check next 6 lines, should be sufficient (at least it should break on END:VCARD
 						{
 							fname += srcLines[r+m].Substring(1); //previous line already ends with '='
 							m++;
@@ -89,10 +89,10 @@ namespace VCFsplitter
 					}
 		        }
 			}
-			catch (Exception ex)
-			{
-				MessageBox.Show("Error: " + ex.Message);  
-			}
+//			catch (Exception ex)
+//			{
+//				MessageBox.Show("Error: " + ex.Message);  
+//			}
 		}
 	}
 }

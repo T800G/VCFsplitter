@@ -48,13 +48,15 @@ namespace VCFsplitter
 			this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
 			this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
 			this.label3 = new System.Windows.Forms.Label();
+			this.label4 = new System.Windows.Forms.Label();
 			this.SuspendLayout();
 			// 
 			// buttonSource
 			// 
-			this.buttonSource.Location = new System.Drawing.Point(479, 36);
+			this.buttonSource.Location = new System.Drawing.Point(399, 30);
+			this.buttonSource.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.buttonSource.Name = "buttonSource";
-			this.buttonSource.Size = new System.Drawing.Size(87, 28);
+			this.buttonSource.Size = new System.Drawing.Size(72, 26);
 			this.buttonSource.TabIndex = 1;
 			this.buttonSource.Text = "Browse...";
 			this.buttonSource.UseVisualStyleBackColor = true;
@@ -62,9 +64,10 @@ namespace VCFsplitter
 			// 
 			// buttonOutput
 			// 
-			this.buttonOutput.Location = new System.Drawing.Point(479, 109);
+			this.buttonOutput.Location = new System.Drawing.Point(399, 91);
+			this.buttonOutput.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.buttonOutput.Name = "buttonOutput";
-			this.buttonOutput.Size = new System.Drawing.Size(87, 28);
+			this.buttonOutput.Size = new System.Drawing.Size(72, 26);
 			this.buttonOutput.TabIndex = 3;
 			this.buttonOutput.Text = "Browse...";
 			this.buttonOutput.UseVisualStyleBackColor = true;
@@ -72,39 +75,44 @@ namespace VCFsplitter
 			// 
 			// textBox1
 			// 
-			this.textBox1.Location = new System.Drawing.Point(22, 38);
+			this.textBox1.Location = new System.Drawing.Point(18, 32);
+			this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(429, 26);
+			this.textBox1.Size = new System.Drawing.Size(358, 22);
 			this.textBox1.TabIndex = 0;
 			// 
 			// textBox2
 			// 
-			this.textBox2.Location = new System.Drawing.Point(22, 111);
+			this.textBox2.Location = new System.Drawing.Point(18, 92);
+			this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.textBox2.Name = "textBox2";
-			this.textBox2.Size = new System.Drawing.Size(429, 26);
+			this.textBox2.Size = new System.Drawing.Size(358, 22);
 			this.textBox2.TabIndex = 2;
 			// 
 			// label1
 			// 
-			this.label1.Location = new System.Drawing.Point(22, 13);
+			this.label1.Location = new System.Drawing.Point(18, 11);
+			this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
 			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(325, 23);
+			this.label1.Size = new System.Drawing.Size(271, 19);
 			this.label1.TabIndex = 7;
 			this.label1.Text = "Input file";
 			// 
 			// label2
 			// 
-			this.label2.Location = new System.Drawing.Point(22, 84);
+			this.label2.Location = new System.Drawing.Point(18, 70);
+			this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
 			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(325, 23);
+			this.label2.Size = new System.Drawing.Size(271, 19);
 			this.label2.TabIndex = 6;
 			this.label2.Text = "Output folder";
 			// 
 			// buttonSplit
 			// 
-			this.buttonSplit.Location = new System.Drawing.Point(479, 177);
+			this.buttonSplit.Location = new System.Drawing.Point(399, 147);
+			this.buttonSplit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.buttonSplit.Name = "buttonSplit";
-			this.buttonSplit.Size = new System.Drawing.Size(87, 28);
+			this.buttonSplit.Size = new System.Drawing.Size(72, 26);
 			this.buttonSplit.TabIndex = 4;
 			this.buttonSplit.Text = "Split";
 			this.buttonSplit.UseVisualStyleBackColor = true;
@@ -113,9 +121,10 @@ namespace VCFsplitter
 			// buttonExit
 			// 
 			this.buttonExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-			this.buttonExit.Location = new System.Drawing.Point(364, 177);
+			this.buttonExit.Location = new System.Drawing.Point(303, 147);
+			this.buttonExit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.buttonExit.Name = "buttonExit";
-			this.buttonExit.Size = new System.Drawing.Size(87, 28);
+			this.buttonExit.Size = new System.Drawing.Size(72, 26);
 			this.buttonExit.TabIndex = 5;
 			this.buttonExit.Text = "Exit";
 			this.buttonExit.UseVisualStyleBackColor = true;
@@ -134,18 +143,30 @@ namespace VCFsplitter
 			// 
 			// label3
 			// 
-			this.label3.Location = new System.Drawing.Point(12, 195);
+			this.label3.Location = new System.Drawing.Point(10, 162);
+			this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
 			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(200, 23);
+			this.label3.Size = new System.Drawing.Size(167, 19);
 			this.label3.TabIndex = 8;
-			this.label3.Text = "T800 Productions © 2019";
+			this.label3.Text = "©T800 Productions";
+			// 
+			// label4
+			// 
+			this.label4.Location = new System.Drawing.Point(303, 56);
+			this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+			this.label4.Name = "label4";
+			this.label4.Size = new System.Drawing.Size(168, 19);
+			this.label4.TabIndex = 9;
+			this.label4.Text = "(or drag and drop file)";
+			this.label4.TextAlign = System.Drawing.ContentAlignment.TopRight;
 			// 
 			// MainForm
 			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
+			this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
 			this.CancelButton = this.buttonExit;
-			this.ClientSize = new System.Drawing.Size(590, 227);
+			this.ClientSize = new System.Drawing.Size(492, 189);
+			this.Controls.Add(this.label4);
 			this.Controls.Add(this.label3);
 			this.Controls.Add(this.buttonExit);
 			this.Controls.Add(this.buttonSplit);
@@ -155,7 +176,9 @@ namespace VCFsplitter
 			this.Controls.Add(this.textBox1);
 			this.Controls.Add(this.buttonOutput);
 			this.Controls.Add(this.buttonSource);
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+			this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
 			this.MaximizeBox = false;
 			this.Name = "MainForm";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -164,6 +187,7 @@ namespace VCFsplitter
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
+		private System.Windows.Forms.Label label4;
 		private System.Windows.Forms.Label label3;
 		private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
 		private System.Windows.Forms.OpenFileDialog openFileDialog1;
